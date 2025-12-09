@@ -1,10 +1,9 @@
 'use client'
 
-import { ButtonHTMLAttributes, forwardRef } from 'react'
-import { motion } from 'framer-motion'
+import { forwardRef } from 'react'
+import { motion, HTMLMotionProps } from 'framer-motion'
 
-export interface IconButtonProps
-  extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface IconButtonProps extends HTMLMotionProps<'button'> {
   'aria-label': string
   size?: 'sm' | 'md' | 'lg'
 }
